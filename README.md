@@ -24,7 +24,7 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 
 - **Usuario D**
 
- ** Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
+ **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
  
   Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
 
