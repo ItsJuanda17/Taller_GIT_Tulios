@@ -17,8 +17,11 @@ class Main:
         print(f"Vehículo añadido: {vehicle}")
         
     def print_vehicles(self):
+        """
+        Imprimir todos los vehículos en la lista de vehículos.
+        """
         for vehicle in self.vehicles:
-            print(f"Brand: {vehicle.brand} Model: {vehicle.model} Year: {vehicle.year} Mileage: {vehicle.mileage} Current Status: {vehicle.current_status} Fuel Type: {vehicle._fuel_type}")
+            print(f"Brand: {vehicle.brand} Model: {vehicle.model} Year: {vehicle.year} Mileage: {vehicle.mileage} Current Status: {vehicle.current_status} Fuel Type: {vehicle._fuel_type}" + (f" Power: {vehicle.power}" if vehicle.power is not None else "") + (f" Color: {vehicle.color}" if vehicle.color is not None else ""))
             
     def search_by_year(self, year):
         """
