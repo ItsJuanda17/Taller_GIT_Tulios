@@ -14,5 +14,3 @@ class Main:
         vehicle = Vehicle(make, model, year)
         self.vehicles.append(vehicle)
         print(f"Vehículo añadido: {vehicle}")
-
-   
