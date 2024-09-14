@@ -1,3 +1,5 @@
+import Vehicle
+
 class Main:
     def __init__(self):
         self.vehicles = []
@@ -13,7 +15,11 @@ class Main:
         vehicle = Vehicle(make, model, year)
         self.vehicles.append(vehicle)
         print(f"Vehículo añadido: {vehicle}")
-
+        
+    def print_vehicles(self):
+        for vehicle in self.vehicles:
+            print(f"Brand: {vehicle.brand} Model: {vehicle.model} Year: {vehicle.year} Mileage: {vehicle.mileage} Current Status: {vehicle.current_status} Fuel Type: {vehicle._fuel_type}")
+            
     def search_by_year(self, year):
         """
         Busca vehículos por año.
