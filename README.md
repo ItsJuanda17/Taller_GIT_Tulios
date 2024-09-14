@@ -17,6 +17,9 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 ## Funcionalidades Principales
 
 - **Usuario A**
+  **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year",
+"mileage", "current_status", "fuel_type" junto con sus respectivos
+métodos getter y setter.
 
 - **Usuario B**
 
