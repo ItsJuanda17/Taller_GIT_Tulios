@@ -17,8 +17,13 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 ## Funcionalidades Principales
 
 - **Usuario A**
+  **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year",
+"mileage", "current_status", "fuel_type" junto con sus respectivos
+métodos getter y setter.
 
 - **Usuario B**
+
+  - **Historial de Mantenimiento:** Almacena la información sobre las reparaciones y mantenimientos realizados, como la fecha, descripción del servicio, kilometraje, costo, y nombre del mecánico.
 
 - **Usuario C**
 
@@ -34,6 +39,8 @@ esta clase, se podrán añadir vehículos a la lista y buscar vehículos por añ
   Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
 
 - **Usuario E**
+
+Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
 
 ## Instrucciones de Configuración
 
