@@ -20,6 +20,8 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 
 - **Usuario B**
 
+  - **Historial de Mantenimiento:** Almacena la información sobre las reparaciones y mantenimientos realizados, como la fecha, descripción del servicio, kilometraje, costo, y nombre del mecánico.
+
 - **Usuario C**
 
   - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de
