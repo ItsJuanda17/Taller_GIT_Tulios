@@ -44,6 +44,11 @@ getter y setter pertinentes
  
   Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
 
+  -**agregar un nuevo atributo “potencia”**
+    
+    Implementa un nuevo atributo llamado "potencia" en la clase Vehicle.py 
+    con sus getters y setters pertinentes. 
+
 - **Usuario E**
 
 Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
