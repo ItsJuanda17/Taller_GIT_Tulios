@@ -31,6 +31,12 @@ métodos getter y setter.
 interacción del sistema, permitiendo gestionar una lista de vehículos. A través de
 esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
 
+    -**Cambios Adicionales en la Clase Vehiculo**: Modifica la clase “Vehiculo”, para agregar un nuevo atributo “color”. Agrega los
+getter y setter pertinentes
+
+
+ 
+
 
 - **Usuario D**
 

@@ -1,14 +1,15 @@
 class Vehicle:
     TYPES_OF_FUEL = ["Gasoline", "Diesel", "Electric"]
 
-    def __init__(self, brand, model, year, mileage, current_status, fuel_type, power):
+    def __init__(self, brand, model, year, mileage, current_status, fuel_type, power=None, color=None):
         self._brand = brand
         self._model = model
         self._year = year
         self._mileage = mileage
         self._current_status = current_status
-        self.set_fuel_type(fuel_type)  # Usar el setter para validación
-        self.set_power(power)  # Usar el setter para validación
+        self.set_fuel_type(fuel_type)  
+        self.set_power(power) 
+        self._color = color
 
     def get_power(self):
         return self._power
@@ -31,6 +32,9 @@ class Vehicle:
     def get_fuel_type(self):
         return self._fuel_type
 
+    def get_color(self):
+        return self._color
+
     def set_brand(self, brand):
         self._brand = brand
 
@@ -47,7 +51,7 @@ class Vehicle:
         self._current_status = current_status
 
     def set_power(self, power):
-        if power < 0:
+        if power is not None and power < 0:
             raise ValueError("Power cannot be a negative number.")
         self._power = power
 
@@ -55,3 +59,6 @@ class Vehicle:
         if fuel_type not in Vehicle.TYPES_OF_FUEL:
             raise ValueError(f"Invalid fuel type: {fuel_type}. Must be one of {Vehicle.TYPES_OF_FUEL}")
         self._fuel_type = fuel_type
+
+    def set_color(self, color):
+        self._color = color
