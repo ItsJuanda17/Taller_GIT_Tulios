@@ -34,7 +34,7 @@ class MainClass:
 
     def searchByYear(self):
         year = int(input("Ingrese el año para buscar vehículos: "))
-        comparison = input("Ingrese 'mayor' o 'menor' para especificar la búsqueda: "))
+        comparison = input("Ingrese 'mayor' o 'menor' para especificar la búsqueda: ")
         results = [vehicle for vehicle in self.vehicles if (comparison == "mayor" and vehicle.getYear() > year) or (comparison == "menor" and vehicle.getYear() < year)]
         for vehicle in results:
             print(f"Marca: {vehicle.getBrand()} Modelo: {vehicle.getModel()} Año: {vehicle.getYear()}")
