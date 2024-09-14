@@ -1,4 +1,3 @@
-
 class Main:
     def __init__(self):
         self.vehicles = []
@@ -14,3 +13,13 @@ class Main:
         vehicle = Vehicle(make, model, year)
         self.vehicles.append(vehicle)
         print(f"Vehículo añadido: {vehicle}")
+
+    def search_by_year(self, year):
+        """
+        Busca vehículos por año.
+        
+        :param year: Año para buscar vehículos
+        :return: Lista de vehículos que coinciden con el año dado
+        """
+        results = [vehicle for vehicle in self.vehicles if vehicle.year == year]
+        return results
