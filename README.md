@@ -35,6 +35,8 @@ esta clase, se podrán añadir vehículos a la lista y buscar vehículos por añ
 
 - **Usuario E**
 
+Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
+
 ## Instrucciones de Configuración
 
 1. **Clonar el repositorio:**
