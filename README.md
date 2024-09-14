@@ -21,12 +21,17 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 - **Usuario B**
 
 - **Usuario C**
- 
+
   - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de
 interacción del sistema, permitiendo gestionar una lista de vehículos. A través de
 esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
 
+
 - **Usuario D**
+
+ **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
+ 
+  Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
 
 - **Usuario E**
 
