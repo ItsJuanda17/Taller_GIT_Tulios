@@ -9,7 +9,7 @@ Un buen mensaje de commit debe seguir el siguiente formato:
 
 [optional body]
 
-[optional footer(s)])
+[optional footer(s)]
 ```
 
 ### Tipos de Commit
