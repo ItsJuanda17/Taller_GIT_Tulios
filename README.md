@@ -53,7 +53,8 @@ Puede buscar vehículos dentro de un rango de años específico utilizando el m�
 
 - **Usuario E**
 
-  - **Imprimir vehiculos con sus caracteristicas:** Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
+Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año, el tipo de combustible, potencia y color.
+
 
 ## Instrucciones de Configuración
 
