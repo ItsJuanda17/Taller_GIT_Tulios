@@ -54,7 +54,7 @@ getter y setter pertinentes
 
 - **Usuario E**
 
-Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
+Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año, el tipo de combustible, potencia y color.
 
 ## Instrucciones de Configuración
 
