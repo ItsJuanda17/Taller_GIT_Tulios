@@ -17,30 +17,26 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 ## Funcionalidades Principales
 
 - **Usuario A**
- -  **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year",
-"mileage", "current_status", "fuel_type" junto con sus respectivos
-métodos getter y setter.
+
+  - **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year", "mileage", "current_status", "fuel_type" junto con sus respectivos métodos getter y setter.
 
 - **Usuario B**
 
   - **Historial de Mantenimiento:** Almacena la información sobre las reparaciones y mantenimientos realizados, como la fecha, descripción del servicio, kilometraje, costo, y nombre del mecánico.
 
+  - **Filtrar Vehículos por Año en Orden:** Implementa un método para filtrar los vehículos por año, permitiendo obtener una lista de vehículos que cumplan con un año específico. Además, se ordena la lista de vehículos por año de forma ascendente o descendente.
+
 - **Usuario C**
 
-  - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de
-interacción del sistema, permitiendo gestionar una lista de vehículos. A través de
-esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
-
+  - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de interacción del sistema, permitiendo gestionar una lista de vehículos. A través de esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
 
 - **Usuario D**
 
- **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
- 
-  Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
+  - **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo:** Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
 
 - **Usuario E**
 
-Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
+  - **Imprimir vehiculos con sus caracteristicas:** Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
 
 ## Instrucciones de Configuración
 
