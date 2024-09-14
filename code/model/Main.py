@@ -20,14 +20,20 @@ class Main:
         for vehicle in self.vehicles:
             print(f"Brand: {vehicle.brand} Model: {vehicle.model} Year: {vehicle.year} Mileage: {vehicle.mileage} Current Status: {vehicle.current_status} Fuel Type: {vehicle._fuel_type}")
             
-    def search_by_year(self, year):
+    def search_by_year(self, year, comparison):
         """
         Busca vehículos por año.
-        
+
         :param year: Año para buscar vehículos
+        :param comparison: Especifica si se busca vehículos mayores o menores al año dado
         :return: Lista de vehículos que coinciden con el año dado
         """
-        results = [vehicle for vehicle in self.vehicles if vehicle.year == year]
+        if comparison == "mayor":
+            results = [vehicle for vehicle in self.vehicles if vehicle.year > year]
+        elif comparison == "menor":
+            results = [vehicle for vehicle in self.vehicles if vehicle.year < year]
+        else:
+            results = []
         return results
     
     def search_by_year_range(self, start_year, end_year):
