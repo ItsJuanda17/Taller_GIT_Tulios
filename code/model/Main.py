@@ -1,51 +1,73 @@
-import Vehicle
+from Vehicle import Vehicle
 
 class Main:
     def __init__(self):
         self.vehicles = []
 
-    def add_vehicle(self, make, model, year):
-        """
-        Añade un vehículo a la lista de vehículos.
-        
-        :param make: Marca del vehículo
-        :param model: Modelo del vehículo
-        :param year: Año del vehículo
-        """
-        vehicle = Vehicle(make, model, year)
-        self.vehicles.append(vehicle)
-        print(f"Vehículo añadido: {vehicle}")
-        
-    def print_vehicles(self):
-        """
-        Imprimir todos los vehículos en la lista de vehículos.
-        """
-        for vehicle in self.vehicles:
-            print(f"Brand: {vehicle.brand} Model: {vehicle.model} Year: {vehicle.year} Mileage: {vehicle.mileage} Current Status: {vehicle.current_status} Fuel Type: {vehicle._fuel_type}" + (f" Power: {vehicle.power}" if vehicle.power is not None else "") + (f" Color: {vehicle.color}" if vehicle.color is not None else ""))
-            
-    def search_by_year(self, year, comparison):
-        """
-        Busca vehículos por año.
+    def add_vehicle(self):
+        make = input("Ingrese la marca del vehículo: ")
+        model = input("Ingrese el modelo del vehículo: ")
+        year = int(input("Ingrese el año del vehículo: "))
+        mileage = int(input("Ingrese el kilometraje del vehículo: "))
+        current_status = input("Ingrese el estado actual del vehículo: ")
+        fuel_type = input("Ingrese el tipo de combustible del vehículo: ")
+        power = input("Ingrese la potencia del vehículo (opcional): ")
+        color = input("Ingrese el color del vehículo (opcional): ")
 
-        :param year: Año para buscar vehículos
-        :param comparison: Especifica si se busca vehículos mayores o menores al año dado
-        :return: Lista de vehículos que coinciden con el año dado
-        """
-        if comparison == "mayor":
-            results = [vehicle for vehicle in self.vehicles if vehicle.year > year]
-        elif comparison == "menor":
-            results = [vehicle for vehicle in self.vehicles if vehicle.year < year]
+        if power:
+            power = int(power)
         else:
-            results = []
-        return results
-    
-    def search_by_year_range(self, start_year, end_year):
-        """
-        Busque vehículos dentro de un rango de años.
+            power = None
 
-        :param start_year: Inicio del rango de años
-        :param end_year: Fin del rango de años
-        :return: Lista de vehículos dentro del rango de años indicado
-        """
+        if color:
+            color = color
+        else:
+            color = None
+
+        vehicle = Vehicle(make, model, year, mileage, current_status, fuel_type, power, color)
+        self.vehicles.append(vehicle)
+        print(f"Vehículo añadido: {vehicle.get_brand()} {vehicle.get_model()}")
+
+    def print_vehicles(self):
+        for vehicle in self.vehicles:
+            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()} Kilometraje: {vehicle.get_mileage()} Estado actual: {vehicle.get_current_status()} Tipo de combustible: {vehicle.get_fuel_type()}" + (f" Potencia: {vehicle.get_power()}" if vehicle.get_power() is not None else "") + (f" Color: {vehicle.get_color()}" if vehicle.get_color() is not None else ""))
+
+    def search_by_year(self):
+        year = int(input("Ingrese el año para buscar vehículos: "))
+        comparison = input("Ingrese 'mayor' o 'menor' para especificar la búsqueda: ")
+        results = [vehicle for vehicle in self.vehicles if (comparison == "mayor" and vehicle.get_year() > year) or (comparison == "menor" and vehicle.get_year() < year)]
+        for vehicle in results:
+            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()}")
+
+    def search_by_year_range(self):
+        start_year = int(input("Ingrese el año inicial del rango: "))
+        end_year = int(input("Ingrese el año final del rango: "))
         results = [vehicle for vehicle in self.vehicles if start_year <= vehicle.get_year() <= end_year]
-        return results
+        for vehicle in results:
+            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()}")
+
+    def menu(self):
+        while True:
+            print("\nMenú:")
+            print("1. Agregar vehículo")
+            print("2. Imprimir vehículos")
+            print("3. Buscar vehículos por año")
+            print("4. Buscar vehículos por rango de años")
+            print("5. Salir")
+            option = input("Ingrese la opción deseada: ")
+            if option == "1":
+                self.add_vehicle()
+            elif option == "2":
+                self.print_vehicles()
+            elif option == "3":
+                self.search_by_year()
+            elif option == "4":
+                self.search_by_year_range()
+            elif option == "5":
+                break
+            else:
+                print("Opción inválida. Por favor, intente de nuevo.")
+
+if __name__ == "__main__":
+    main = Main()
+    main.menu()
