@@ -35,3 +35,14 @@ class Main:
         else:
             results = []
         return results
+    
+    def search_by_year_range(self, start_year, end_year):
+        """
+        Busque vehículos dentro de un rango de años.
+
+        :param start_year: Inicio del rango de años
+        :param end_year: Fin del rango de años
+        :return: Lista de vehículos dentro del rango de años indicado
+        """
+        results = [vehicle for vehicle in self.vehicles if start_year <= vehicle.get_year() <= end_year]
+        return results

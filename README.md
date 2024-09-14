@@ -18,7 +18,11 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 
 - **Usuario A**
 
-  - **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year", "mileage", "current_status", "fuel_type" junto con sus respectivos métodos getter y setter.
+- **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year", "mileage", "current_status", "fuel_type" junto con sus respectivos métodos getter y setter.
+
+- **filtro por rango de años:** se añadio la funcion "search_by_year_range" para que el sistema pueda buscar vehículos dentro de un rango de años.
+
+Puede buscar vehículos dentro de un rango de años específico utilizando el método search_by_year_range: " main.search_by_year_range(2010, 2016) "
 
 - **Usuario B**
 
@@ -28,11 +32,24 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 
 - **Usuario C**
 
-  - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de interacción del sistema, permitiendo gestionar una lista de vehículos. A través de esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
+  - **Lista de vehiculos:** : Implementará la clase "Main", que será el punto central de
+    interacción del sistema, permitiendo gestionar una lista de vehículos. A través de
+    esta clase, se podrán añadir vehículos a la lista y buscar vehículos por año
+
+        -**Cambios Adicionales en la Clase Vehiculo**: Modifica la clase “Vehiculo”, para agregar un nuevo atributo “color”. Agrega los
+
+    getter y setter pertinentes
 
 - **Usuario D**
 
-  - **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo:** Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
+  **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
+
+  Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
+
+  -**agregar un nuevo atributo “potencia”**
+
+  Implementa un nuevo atributo llamado "potencia" en la clase Vehicle.py
+  con sus getters y setters pertinentes.
 
 - **Usuario E**
 
