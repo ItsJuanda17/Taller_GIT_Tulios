@@ -37,8 +37,8 @@ esta clase, se podrán añadir vehículos a la lista y buscar vehículos por añ
  **Validaciones Adicionales para el Tipo de Combustible en la Clase Vehiculo**
  
   Implementa validaciones adicionales en la clase Vehiculo, asegurando que el tipo de combustible solo pueda ser de una lista      predefinida (por ejemplo, “Gasolina”, “Diesel”, “Eléctrico”).
-
-- **Usuario E**
+ 
+ - **Usuario E**
 
 Implementa método para la impresión de los vehículos registrados en el sistema, mostrando información relevante de cada uno de ellos, incluyendo la marca, el modelo, el año y el tipo de combustible.
 
