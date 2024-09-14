@@ -1,16 +1,16 @@
 from Vehicle import Vehicle
 
-class Main:
+class MainClass:
     def __init__(self):
         self.vehicles = []
 
-    def add_vehicle(self):
+    def addVehicle(self):
         make = input("Ingrese la marca del vehículo: ")
         model = input("Ingrese el modelo del vehículo: ")
         year = int(input("Ingrese el año del vehículo: "))
         mileage = int(input("Ingrese el kilometraje del vehículo: "))
-        current_status = input("Ingrese el estado actual del vehículo: ")
-        fuel_type = input("Ingrese el tipo de combustible del vehículo: ")
+        currentStatus = input("Ingrese el estado actual del vehículo: ")
+        fuelType = input("Ingrese el tipo de combustible del vehículo: ")
         power = input("Ingrese la potencia del vehículo (opcional): ")
         color = input("Ingrese el color del vehículo (opcional): ")
 
@@ -24,27 +24,27 @@ class Main:
         else:
             color = None
 
-        vehicle = Vehicle(make, model, year, mileage, current_status, fuel_type, power, color)
+        vehicle = Vehicle(make, model, year, mileage, currentStatus, fuelType, power, color)
         self.vehicles.append(vehicle)
-        print(f"Vehículo añadido: {vehicle.get_brand()} {vehicle.get_model()}")
+        print(f"Vehículo añadido: {vehicle.getBrand()} {vehicle.getModel()}")
 
-    def print_vehicles(self):
+    def printVehicles(self):
         for vehicle in self.vehicles:
-            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()} Kilometraje: {vehicle.get_mileage()} Estado actual: {vehicle.get_current_status()} Tipo de combustible: {vehicle.get_fuel_type()}" + (f" Potencia: {vehicle.get_power()}" if vehicle.get_power() is not None else "") + (f" Color: {vehicle.get_color()}" if vehicle.get_color() is not None else ""))
+            print(f"Marca: {vehicle.getBrand()} Modelo: {vehicle.getModel()} Año: {vehicle.getYear()} Kilometraje: {vehicle.getMileage()} Estado actual: {vehicle.getCurrentStatus()} Tipo de combustible: {vehicle.getFuelType()}" + (f" Potencia: {vehicle.getPower()}" if vehicle.getPower() is not None else "") + (f" Color: {vehicle.getColor()}" if vehicle.getColor() is not None else ""))
 
-    def search_by_year(self):
+    def searchByYear(self):
         year = int(input("Ingrese el año para buscar vehículos: "))
-        comparison = input("Ingrese 'mayor' o 'menor' para especificar la búsqueda: ")
-        results = [vehicle for vehicle in self.vehicles if (comparison == "mayor" and vehicle.get_year() > year) or (comparison == "menor" and vehicle.get_year() < year)]
+        comparison = input("Ingrese 'mayor' o 'menor' para especificar la búsqueda: "))
+        results = [vehicle for vehicle in self.vehicles if (comparison == "mayor" and vehicle.getYear() > year) or (comparison == "menor" and vehicle.getYear() < year)]
         for vehicle in results:
-            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()}")
+            print(f"Marca: {vehicle.getBrand()} Modelo: {vehicle.getModel()} Año: {vehicle.getYear()}")
 
-    def search_by_year_range(self):
-        start_year = int(input("Ingrese el año inicial del rango: "))
-        end_year = int(input("Ingrese el año final del rango: "))
-        results = [vehicle for vehicle in self.vehicles if start_year <= vehicle.get_year() <= end_year]
+    def searchByYearRange(self):
+        startYear = int(input("Ingrese el año inicial del rango: "))
+        endYear = int(input("Ingrese el año final del rango: "))
+        results = [vehicle for vehicle in self.vehicles if startYear <= vehicle.getYear() <= endYear]
         for vehicle in results:
-            print(f"Marca: {vehicle.get_brand()} Modelo: {vehicle.get_model()} Año: {vehicle.get_year()}")
+            print(f"Marca: {vehicle.getBrand()} Modelo: {vehicle.getModel()} Año: {vehicle.getYear()}")
 
     def menu(self):
         while True:
@@ -56,18 +56,18 @@ class Main:
             print("5. Salir")
             option = input("Ingrese la opción deseada: ")
             if option == "1":
-                self.add_vehicle()
+                self.addVehicle()
             elif option == "2":
-                self.print_vehicles()
+                self.printVehicles()
             elif option == "3":
-                self.search_by_year()
+                self.searchByYear()
             elif option == "4":
-                self.search_by_year_range()
+                self.searchByYearRange()
             elif option == "5":
                 break
             else:
                 print("Opción inválida. Por favor, intente de nuevo.")
 
 if __name__ == "__main__":
-    main = Main()
+    main = MainClass()
     main.menu()
