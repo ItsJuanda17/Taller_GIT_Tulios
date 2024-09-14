@@ -17,9 +17,12 @@ El proyecto está diseñado para ser colaborativo, utilizando Git y GitHub para 
 ## Funcionalidades Principales
 
 - **Usuario A**
- -  **Añadir implementacion de la clase Vehicle:** se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year",
-"mileage", "current_status", "fuel_type" junto con sus respectivos
-métodos getter y setter.
+
+ -  **Añadir implementacion de la clase Vehicle:**  se implemento la clase Vehicle incluyendo los atributos "brand", "model", "year", "mileage", "current_status", "fuel_type" junto con sus respectivos métodos getter y setter.
+
+ - **filtro por rango de años:** se añadio la funcion "search_by_year_range" para que el sistema pueda buscar vehículos dentro de un rango de años. 
+ 
+ Puede buscar vehículos dentro de un rango de años específico utilizando el método search_by_year_range: " main.search_by_year_range(2010, 2016) "
 
 - **Usuario B**
 
